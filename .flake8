@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: Copyright © 2022 Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Alexandre Bittar <abittar@idiap.ch>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+[flake8]
+max-line-length = 88
+select = B,C,E,F,W,T4,B9,B950
+ignore = E501, W503, E203

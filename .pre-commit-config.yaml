@@ -1,0 +1,37 @@
+# SPDX-FileCopyrightText: Copyright © 2022 Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Alexandre Bittar <abittar@idiap.ch>
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/timothycrosley/isort
+    rev: 5.10.1
+    hooks:
+    - id: isort
+      args: [--sl, --profile=black]
+  - repo: https://github.com/psf/black
+    rev: 22.6.0
+    hooks:
+    - id: black
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: check-ast
+      - id: check-case-conflict
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: debug-statements
+      - id: check-added-large-files
+      - id: check-docstring-first
+  - repo: https://github.com/PyCQA/flake8/
+    rev: 4.0.1
+    hooks:
+      - id: flake8
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.4
+    hooks:
+      - id: bandit
+        args: [-c, .bandit]

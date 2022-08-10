@@ -1,0 +1,15 @@
+#
+# SPDX-FileCopyrightText: Copyright © 2022 Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Alexandre Bittar <abittar@idiap.ch>
+#
+# SPDX-License-Identifier: BSD-3-clause
+#
+# This file is part of the sparch package
+#
+
+h5py==3.7.0
+numpy==1.22.3
+torch==1.12.0
+torchaudio==0.12.0
+torchaudio_augmentations==0.2.4
