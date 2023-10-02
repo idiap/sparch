@@ -113,3 +113,17 @@ Standard artificial neural networks (ANNs) with non-spiking neurons are also def
 |
 └── run_exp.py
 ```
+
+## Citation
+If you use this framework in your research, please cite it as
+```
+@article{bittar2022surrogate,
+  title={A surrogate gradient spiking baseline for speech command recognition},
+  author={Bittar, Alexandre and Garner, Philip N},
+  journal={Frontiers in Neuroscience},
+  volume={16},
+  year={2022},
+  publisher={Frontiers},
+  doi={10.3389/fnins.2022.865897}
+}
+```
